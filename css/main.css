@@ -103,7 +103,6 @@ body {
 ul,
 ol {
   list-style-type: none;
-  text-transform: uppercase;
 }
 
 a {
@@ -131,9 +130,11 @@ p {
 }
 
 img {
+  width: 100%;
 }
 
 figure {
+  margin: 0;
 }
 
 address {
@@ -170,6 +171,14 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 60%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -185,6 +194,7 @@ header nav {
   width: 60%;
   font-size: 1.125em;
   font-weight: 700;
+  text-transform: uppercase;
 }
 
 header nav ul {
@@ -203,6 +213,9 @@ header nav ul li {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 500px;
 }
 
 .hero-area h1 {
@@ -254,6 +267,8 @@ input[type="button"] {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url(../img/unplugged-retreat-features.jpg) center no-repeat;
+  background-size: cover;
 }
 
 .features h2 {
@@ -272,7 +287,8 @@ input[type="button"] {
   flex-flow: row wrap;
 }
 
-.feature p {
+.features p {
+  text-align: center;
   margin: 0;
 }
 
