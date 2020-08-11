@@ -103,6 +103,8 @@ body {
 ul,
 ol {
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -111,14 +113,15 @@ a {
 }
 
 h2 {
-  font-family: "Poppings", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   font-size: 1.875em;
+  margin: 0;
 }
 
 h3,
 h4 {
-  font-family: "Poppings", sans-serif;
+  font-family: "Poppins", sans-serif;
   font-weight: 500;
   margin: 20px 0;
   font-size: 1.125em;
@@ -146,7 +149,7 @@ address {
   margin: 50px 0;
 }
 
-/* --------------- Mobile Styles - Homepage -------------- */
+/* --------------- Base Header - Footer Styles -------------- */
 
 header,
 footer {
@@ -207,114 +210,6 @@ header nav ul li {
   font-size: 1.125em;
 }
 
-/* Hero Area */
-
-.hero-area {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background: url(../img/unplugged-retreat.jpg) center no-repeat;
-  background-size: cover;
-  min-height: 500px;
-}
-
-.hero-area h1 {
-  font-size: 2.25em;
-  font-family: "Poppings", Arial, Helvetica, sans-serif;
-  font-weight: 500;
-  line-height: 1.2;
-}
-
-/* Aside */
-
-aside {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-  background-color: #527158;
-}
-
-aside .form {
-  margin-top: 30px;
-}
-
-input[type="text"] {
-  box-sizing: border-box;
-  width: 100%;
-  color: #2a423a;
-  font-style: italic;
-  padding: 1em;
-}
-
-input[type="button"] {
-  width: 100%;
-  padding: 20px 0;
-  margin-top: 20px;
-  background-color: #2a423a;
-  font-family: "Poppings", Helveica, Arial, Helvetica, sans-serif;
-  font-size: 500;
-  font-size: 1.125em;
-  color: #e2e3ed;
-  border: none;
-  text-align: center;
-  text-transform: uppercase;
-}
-
-/* Feature */
-
-.features {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background: url(../img/unplugged-retreat-features.jpg) center no-repeat;
-  background-size: cover;
-}
-
-.features h2 {
-  margin-bottom: 60px;
-}
-
-.features i {
-  font-size: 3.75em;
-  margin-bottom: 40px;
-}
-
-.features article {
-  width: 63%;
-  margin: 30px 0;
-}
-
-.features .features-items {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-flow: row wrap;
-}
-
-.features p {
-  text-align: center;
-  margin: 0;
-}
-
-/* Reviews */
-
-.reviews {
-  display: flex;
-  justify-content: center;
-  flex-flow: row wrap;
-  background-color: #2a432a;
-}
-
-.reviews h2 {
-  margin-bottom: 40px;
-}
-
-.reviews h3 {
-  width: 55%;
-  margin: 20px 0;
-}
-
 /* footer */
 
 footer {
@@ -351,11 +246,127 @@ footer .social-icons p {
   background-color: #527158;
 }
 
-footer i {
+footer .social-icons p i {
   font-size: 1.3125em;
 }
 
 footer .copyright {
+  margin: 20px 0;
+}
+
+/* --------------- Mobile Styles - Homepage -------------- */
+
+/* Hero Area */
+
+.hero-area {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url(../img/unplugged-retreat.jpg) center no-repeat;
+  background-size: cover;
+  min-height: 500px;
+}
+
+.hero-area h1 {
+  font-size: 2.25em;
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  font-weight: 500;
+  line-height: 1.2;
+}
+
+/* Aside */
+
+aside {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+  background-color: #527158;
+}
+
+aside h3 {
+  margin: 0;
+}
+
+aside .form {
+  margin-top: 30px;
+}
+
+input[type="text"] {
+  box-sizing: border-box;
+  width: 100%;
+  color: #2a423a;
+  font-style: italic;
+  padding: 1em;
+}
+
+input[type="button"] {
+  width: 100%;
+  padding: 20px 0;
+  margin-top: 20px;
+  background-color: #2a423a;
+  font-family: "Poppins", Helveica, Arial, Helvetica, sans-serif;
+  font-size: 500;
+  font-size: 1.125em;
+  color: #e2e3ed;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+/* Feature */
+
+.features {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background: url(../img/unplugged-retreat-features.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.features h2 {
+  margin-bottom: 60px;
+}
+
+.features article {
+  width: 63%;
+  margin: 30px 0;
+}
+
+.features .features-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
+}
+
+.features i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
+}
+
+.features p {
+  text-align: center;
+  margin: 0;
+}
+
+/* Reviews */
+
+.reviews {
+  display: flex;
+  justify-content: center;
+  flex-flow: row wrap;
+  background-color: #2a432a;
+}
+
+.reviews h2 {
+  margin-top: 0;
+  margin-bottom: 40px;
+}
+
+.reviews h3 {
+  width: 55%;
   margin: 20px 0;
 }
 
@@ -554,6 +565,10 @@ footer .copyright {
     justify-content: space-between;
   }
 
+  header figure {
+    width: 30%;
+  }
+
   header nav {
     width: 20%;
   }
@@ -594,6 +609,10 @@ footer .copyright {
     margin-bottom: 20px;
   }
 
+  .features i {
+    margin-bottom: 30px;
+  }
+
   .features article {
     display: flex;
     justify-content: center;
@@ -616,6 +635,7 @@ footer .copyright {
     width: 85%;
   }
 
+  .reviews article figure,
   .reviews article div {
     width: 49%;
   }
@@ -647,6 +667,15 @@ footer .copyright {
     line-height: 1.285;
   }
 
+  footer p {
+    line-height: 1.285;
+  }
+
+  footer .social-icons {
+    width: 12.5em;
+    justify-content: space-between;
+  }
+
   footer .copyright {
     width: 100%;
   }
@@ -663,15 +692,15 @@ footer .copyright {
   }
 
   .mission-content p {
-    width: 45.5%;
+    width: 45%;
+  }
+
+  .map figure {
+    padding-bottom: 45.5%;
   }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
-  }
-
-  .map figure {
-    padding-bottom: 55%;
   }
 
   .contact-content {
@@ -700,7 +729,6 @@ footer .copyright {
   }
 }
 
-.faq h4,
 .faq p {
   font-size: 0.875em;
   line-height: 1.125;
@@ -739,7 +767,7 @@ footer .copyright {
   /* Hero */
   .hero-area h1 {
     font-size: 3.75em;
-    width: 60%;
+    width: 70%;
   }
 
   /* Aside */
