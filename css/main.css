@@ -345,6 +345,14 @@ footer .social-icons p {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #527158;
+}
+
+footer i {
+  font-size: 1.3125em;
 }
 
 footer .copyright {
