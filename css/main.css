@@ -361,7 +361,7 @@ footer .copyright {
 .map figure {
   position: relative;
   height: 0;
-  padding-bottom: 125s%;
+  padding-bottom: 125%;
   width: 100%;
   overflow: hidden;
 }
@@ -650,11 +650,15 @@ footer .copyright {
   }
 
   .mission-content p {
-    width: 45%;
+    width: 45.5%;
   }
 
   .contact-section .content-wrapper h2 {
     width: 80%;
+  }
+
+  .map figure {
+    padding-bottom: 55%;
   }
 
   .contact-content {
@@ -773,6 +777,10 @@ footer .copyright {
   .contact-section .contact-wrapper h2 {
     width: 95%;
     font-size: 3em;
+  }
+
+  .map figure {
+    padding-bottom: 37.5%;
   }
 
   .contact-content h4 {
